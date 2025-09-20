@@ -1,8 +1,8 @@
 function mobileNavDisplay() {
-    let x = document.getElementsByClassName("topNav");
-    if (x.className === "topNav") {
-        x.className += " responsive";
+    let x = document.getElementById("main-nav");
+    if (x.style.display === "flex") {
+        x.style.display = "none";
     } else {
-        x.className = "topNav";
+        x.style.display = "flex";
     }
 }

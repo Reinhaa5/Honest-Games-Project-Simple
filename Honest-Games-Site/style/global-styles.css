@@ -1,0 +1,277 @@
+/*Font Import*/
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@font-face {
+    font-family: "fff-forward";
+    src:
+        url("fonts/fff-forward.regular-webfont.woff2") format("woff2"),
+        url("fonts/fff-forward.regular-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+/*Vars for style basics*/
+:root {
+    /*Colors*/
+    --mainBrandColor: #3550ce;
+    --secondaryBrandColor: #fffafa;
+    --triggerBrandColor: #e52828;
+    --linkColor: #4286f4;
+    --copyColor: #000000;
+    /*Fonts*/
+    --primaryFont: "Outfit", sans-serif;
+    --accentFont: "fff-forward", sans-serif;
+
+    /*Text Size*/
+    --heroBannerHeadline: 8rem;
+    --heroBannerSubhead: 1.25rem;
+    --bodySectionHeadline: 6.5rem;
+    --bodySecionSubhead: 2.5rem;
+    --bodyCopyHeadline: 3rem;
+    --bodyCopyDesc: 2rem;
+    --mainCTA: 3rem;
+    --navigation: 2.5rem;
+    --buttonCTA: 4.5rem;
+
+    /*Module Width*/
+    --desktopWidth: 1080px;
+}
+
+/*Reset all margin and padding*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    /*for easy em&rem converstion*/
+    font-size: 10px;
+
+    /*Base colors*/
+    background-color: var(--secondaryBrandColor);
+    color: var(--copyColor);
+}
+
+body {
+    /*for accessibility*/
+    font-size: 100%;
+
+    /*Basic Font*/
+    font-family: var(--primaryFont);
+}
+
+/*Basic Heading and Paragraph Styles*/
+h1 {
+    font-size: var(--heroBannerHeadline);
+}
+h2 {
+    font-size: var(--bodySectionHeadline);
+}
+h3 {
+    font-size: var(--bodyCopyHeadline);
+}
+p {
+    font-size: var(--bodyCopyDesc);
+}
+
+/*Global Text Modifiers*/
+.upperCase {
+    text-transform: uppercase;
+}
+.lowerCase {
+    text-transform: lowercase;
+}
+
+/*General Links*/
+a {
+    text-decoration: none;
+    color: var(--linkColor);
+}
+
+/*Notifcation Bar*/
+#notifBar {
+    width: 100%;
+    font-size: var(--bodyCopyHeadline);
+    background-color: greenyellow;
+    text-align: center;
+    padding: 20px;
+    /*position: fixed;*/
+}
+
+/*General Navigation*/
+nav {
+    /*Set all nav font/size*/
+    font-family: var(--primaryFont);
+    font-size: var(--navigation);
+}
+nav ul li {
+    /*remove list style from navs*/
+    list-style: none;
+}
+
+/*Header Navigation*/
+header nav {
+    max-width: var(--desktopWidth);
+    margin: auto;
+    padding-top: 2rem;
+    /*Font changes*/
+    font-weight: 800;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@keyframes myAnimation {
+    from {
+        top: -50px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+header nav ul li {
+    position: relative;
+    animation-name: myAnimation;
+    animation-duration: 300ms;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+}
+header nav ul li:nth-child(1),
+header nav ul li:nth-child(5) {
+    animation-delay: 500ms;
+}
+header nav ul li:nth-child(2),
+header nav ul li:nth-child(4) {
+    animation-delay: 400ms;
+}
+header nav ul li:nth-child(3) {
+    animation-delay: 300ms;
+}
+header nav img {
+    max-width: 175px;
+    transition: transform 300ms;
+}
+header nav img:hover {
+    transform: scaleX(1.1) scaleY(1.1) rotate(-8deg);
+}
+
+header li a {
+    position: relative;
+    color: var(--mainBrandColor);
+    text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+    transition: text-decoration-color 300ms;
+}
+
+header li a::after {
+    content: "";
+    padding: 50px;
+    position: absolute;
+    left: -25px;
+    top: -25px;
+}
+
+header li a:hover {
+    text-decoration-color: var(--mainBrandColor);
+    text-decoration-thickness: 0.5rem;
+}
+
+#mobileBar {
+    display: none;
+}
+
+/*Global Footer*/
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 34px;
+    padding-top: 80px;
+    padding-bottom: 95px;
+    background-color: var(--mainBrandColor);
+}
+#footerLogo {
+    max-width: 356px;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    gap: 63px;
+
+    /*Text Adjustments*/
+    font-weight: 800;
+}
+
+footer nav a {
+    position: relative;
+    color: var(--secondaryBrandColor);
+}
+
+footer nav a::after {
+    content: "  ";
+    padding: 50px;
+    position: absolute;
+    left: -25px;
+    top: -25px;
+}
+
+footer nav li a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 0.5rem;
+}
+
+#footerSocialMedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    width: 100%;
+}
+
+#footerSocialMedia li {
+    list-style: none;
+}
+
+#footerSocialMedia img {
+    max-width: 71px;
+}
+
+/*Media Query for 1200px and less*/
+@media only screen and (max-width: 1200px) {
+    header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: var(--secondaryBrandColor);
+        z-index: 999;
+    }
+    #mobileBar {
+        display: flex;
+        justify-content: space-between;
+        margin: 1.9rem 3.5rem;
+    }
+    #mobileBar img {
+        max-width: 8rem;
+    }
+    header nav {
+        display: none;
+    }
+    header nav ul {
+        flex-direction: column;
+        gap: 2rem;
+        margin: auto;
+    }
+    /*removes image*/
+    header nav ul li:nth-child(3) {
+        display: none;
+    }
+    footer nav ul {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}

@@ -1,171 +1,193 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
+        <meta charset="utf-8" />
         <title>Honest Games Project</title>
-        <link rel="stylesheet" href="./style/styles.css" />
-        <link rel="stylesheet" href="https://use.typekit.net/ywt3vrl.css" />
-        <!--Fonts-->
-        <style>
+        <meta name="author" content="" />
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        </style>
+        <link href="style/global-styles.css" rel="stylesheet" />
+        <link href="style/homepage-style.css" rel="stylesheet" />
     </head>
+
     <body>
-        <header class="siteHeader">
-            <a href="index.html">
-                <img id="navLogo" src="./media/Honest-Games-Project-Nav-Logo.png" alt="Honest Games Project logo."
-            /></a>
-            <a class="hamburger"  aria-label="Toggle navigation"><img src="./icons/bars-solid.svg"></a>
-            <nav id="topNav">
-                <ul class="upperCase">
+        <header>
+            <div id="notifBar">Website is still under development. Last update 9/20</div>
+            <div id="mobileBar">
+                <a href="index.html"><img src="media/Honest-Games-Project-Nav-Logo.png" alt="home" /></a>
+                <button id="hamburgerBtn" onclick="mobileNavDisplay()">
+                    <svg viewBox="0 0 100 80" width="40" height="40" fill="#3550ce">
+                        <rect width="100" height="20"></rect>
+                        <rect y="30" width="100" height="20"></rect>
+                        <rect y="60" width="100" height="20"></rect>
+                    </svg>
+                </button>
+            </div>
+            <nav id="main-nav">
+                <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="">Take Action</a></li>
-                    <li><a href="">Knowledge Base</a></li>
-                    <li><a href="">About Us</a></li>
+                    <li><a href="index.html">Take Action</a></li>
+                    <li>
+                        <a href="index.html"><img src="media/Honest-Games-Project-Nav-Logo.png" alt="home" /></a>
+                    </li>
+                    <li><a href="index.html">Knowledge Base</a></li>
+                    <li><a href="index.html">About</a></li>
                 </ul>
             </nav>
         </header>
-        <div id="introContainer">
-            <div>
-                <h1 class="title">the <br />Honest Games <br />project</h1>
-                <p>
-                    Let’s create a world of fun and fair games together - leave the manipulative marketing behind and
-                    support honest play.
-                </p>
-                <p class="lowerCase accentLink">Keep Scrolling &gt;</p>
+        <main>
+            <!--Hero Module-->
+            <div id="hero">
+                <div id="heroText">
+                    <h1 class="upperCase">
+                        <img id="desktopHero" src="media/HG-Logo-Main.svg" alt="The Honest Games Project" />
+                        <img id="mobileHero" src="media/HG-Logo-Centered-Mobile.svg" alt="The Honest Games Project" />
+                        <!--
+                        <span>The</span> <span>Honest</span><span> Games <img src="media/HG-heart-icon.png" /></span>
+                        <span>Project</span>
+                        -->
+                    </h1>
+                    <p>
+                        Let’s create a world of fun and fair games together - leave the manipulative marketing behind
+                        and support honest play.
+                    </p>
+                    <p class="lowerCase">Keep scrolling &#62;</p>
+                </div>
             </div>
-        </div>
-        <!--<img src="/Media/hero-illustration.png" />-->
 
-        <div id="mainDiv">
-            <div id="takeActionContainer">
-                <h2 class="upperCase">Take Action</h2>
-                <div class="threeUpContainer">
-                    <div class="threeUpItem">
-                        <img src="https://placehold.co/515x495" />
-                        <div>
+            <!--Take Action Module-->
+            <div id="takeActionModule">
+                <div id="takeActionContainer">
+                    <h2 class="upperCase">Take Action</h2>
+                    <div id="takeAction3up">
+                        <!-- Take Action Info Box 1-->
+                        <div class="takeAction3upBox">
                             <h3>Get Informed</h3>
                             <p>
-                                Video games are using shady sales tactics to separate people from their hard-earned
-                                money, making it harder to have fair and informed choices.
+                                Modern video games are using shady sales tactics to separate people from their
+                                hard-earned money.
                             </p>
+                            <img src="https://placehold.co/350x330" />
                         </div>
-                    </div>
-                    <div class="threeUpItem">
-                        <img src="https://placehold.co/515x495" />
-                        <div>
+
+                        <!--Take Action Info Box 2-->
+                        <div class="takeAction3upBox">
                             <h3>Test your Game</h3>
                             <p>
                                 Use the deceptive patterns calculator tool to discover if the games you love are subtly
                                 pushing you to spend more money.
                             </p>
+                            <img src="https://placehold.co/350x330" />
                         </div>
-                    </div>
-                    <div class="threeUpItem">
-                        <img src="https://placehold.co/515x495" />
-                        <div>
+
+                        <!-- Take Action Info Box 3-->
+                        <div class="takeAction3upBox">
                             <h3>Spread the Word</h3>
                             <p>
                                 Don’t let your friends and family fall for the same traps. Learn the signs and start the
                                 conversation. Share these resources with friends.
                             </p>
+                            <img src="https://placehold.co/350x330" />
                         </div>
                     </div>
                 </div>
             </div>
-            <div id="deceptivePattersContainer">
-                <div id="definedContainer">
-                    <h2 class="upperCase">Decpetive Patterns Defined</h2>
-                    <p>
-                        Deceptive patterns (also known as dark patterns) are design choices in websites, apps, and video
-                        games used to intentionally manipulate users into taking actions they otherwise would not. From
-                        loot boxes to time-limited sales, deceptive patterns in video games actively push users to spend
-                        more time and money in the game.
-                    </p>
-                </div>
-                <div id="patternsCarouselContainer">
-                    <div id="patternsCarouselHeader">
-                        <div><p>30+</p></div>
-                        <div><p>Documented Decpetive Patterns in Video Games</p></div>
+
+            <!--Decpetive Patterns Module-->
+            <div id="deceptivePatternsModule">
+                <h2 class="upperCase">Deceptive Patterns Defined</h2>
+                <p id="deceptivePatternsModuleIntroText">
+                    Deceptive patterns are design choices in websites, apps, and video games used to intentionally
+                    manipulate users into taking actions they otherwise would not. Fromloot boxes to time-limited sales,
+                    deceptive patterns in video games actively push users to spend more time and money in the game.
+                </p>
+                <div id="DeceptivePatternsInfoContainer">
+                    <div id="DeceptivePatternsInfoContainerHeader">
+                        <h2>
+                            <span>30+</span>
+                            <span>documented deceptive patterns in video games</span>
+                        </h2>
                     </div>
-                    <div id="patternsCarouselContent">
-                        <div class="patternsCarouselItem">
-                            <img src="https://placehold.co/700x580" />
-                            <div>
-                                <h4>Loot Boxes</h4>
-                                <p>
-                                    Loot boxes are psychology-akin to gambling and have no age restrictions in the
-                                    United States. They are similar to baseball cards as loot boxes contain random
-                                    rewards that have random rarities.
-                                </p>
-                                <p><a href="">Learn More</a></p>
-                            </div>
-                        </div>
-                        <div class="patternsCarouselItem">
-                            <img src="https://placehold.co/700x580" />
-                            <div>
-                                <h4>Pay to Win</h4>
-                                <p>
-                                    Ability to gain in-game progress by spending money, usually gaining advantages over
-                                    other players. Games can manipulate players by slowly ramping up the difficulty and
-                                    reduce the effectiveness of the player, pushing payment as the only way of
-                                    progression.
-                                </p>
-                                <p><a href="">Learn More</a></p>
-                            </div>
-                        </div>
-                        <div class="patternsCarouselItem">
-                            <img src="https://placehold.co/700x580" />
-                            <div>
-                                <h4>Impersonation</h4>
-                                <p>
-                                    Some games will impersonate your real life friends using your contact data, trying
-                                    to trick you into thinking your friends are playing. Sometimes these "friends" will
-                                    have fake high-scores or send you in-game gifts.
-                                </p>
-                                <p><a href="">Learn More</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="parentsContainer">
-                <div>
-                    <h2 class="upperCase">Tools for Parents & Educators</h2>
-                    <div>
-                        <div>
-                            <p>Not sure how to start the conversation?</p>
+                    <div class="DeceptivePatternsInfoContainerBox">
+                        <!--Decpetive Patterns Info Box 1-->
+                        <div class="DeceptivePatternsInfoContainerBoxText">
+                            <h3>Deceptive Pattern 1</h3>
                             <p>
-                                Use our free resource guides to learn how to start the conversation about deceptive
-                                patterns with the people you care about.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                             </p>
                         </div>
-                        <p class="lowerCase accentLink"><a href="">Learn More &gt;</a></p>
+                        <img src="https://placehold.co/450x400" div />
+
+                        <!--
+                        Decpetive Patterns Info Box 2
+                        <div class="DeceptivePatternsInfoContainerBox">
+                            <h3>Deceptive Pattern 2</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                            <img src="https://placehold.co/450x400" />
+                        </div>
+
+                        Decpetive Patterns Info Box 3
+                        <div class="DeceptivePatternsInfoContainerBox">
+                            <h3>Deceptive Pattern 3</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                            <img src="https://placehold.co/450x400" />]
+                        </div>
+                        -->
                     </div>
                 </div>
             </div>
-        </div>
-        <footer>
-            <div>
-                <a href="index.html">
-                    <img src="media/honest-games-logo-footer.png" />
-                </a>
-                <nav>
-                    <ul class="upperCase">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="">Take Action</a></li>
-                        <li><a href="">Knowledge Base</a></li>
-                        <li><a href="">About Us</a></li>
-                    </ul>
-                </nav>
-                <div id="socialContainer">
-                    <img src="media/instagram-logo.png" />
-                    <img src="media/twitter-logo.png" />
-                    <img src="media/youtube-logo.png" />
+            <!--Educator and Parents Module-->
+            <div id="educatorModule">
+                <img src="/Honest-Games-Site/media/rex-racoon-stickers.png" alt="" id="sticker" />
+                <div id="educatorContainer">
+                    <h2>Tools for Parents & Educators</h2>
+                    <div id="educatorBodyText">
+                        <p>Not sure how to start the conversation?</p>
+                        <p>
+                            Use our free resource guides to learn how to start the conversation about deceptive patterns
+                            with the people you care about.
+                        </p>
+                        <p><a href="index.html">learn more &#62;</a></p>
+                    </div>
                 </div>
             </div>
+        </main>
+        <footer>
+            <a href="index.html"
+                ><img id="footerLogo" src="media/honest-games-logo-footer.png" alt="The Honest Games Project" />
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Take Action</a></li>
+                    <li><a href="index.html">Knowledge Base</a></li>
+                    <li><a href="index.html">About</a></li>
+                </ul>
+            </nav>
+            <ul id="footerSocialMedia">
+                <li>
+                    <a href="index.html"><img src="media/instagram-logo.png" alt="Instagram" /></a>
+                </li>
+                <li>
+                    <a href="index.html"><img src="media/youtube-logo.png" alt="YouTube" /></a>
+                </li>
+                <li>
+                    <a href="index.html"><img src="media/twitter-logo.png" alt="Twitter" /></a>
+                </li>
+            </ul>
         </footer>
-        <script src=scripts/core.js;></script>
-        <script src="scripts/carousel.js"></script>
+
+        <script src="scripts/core.js"></script>
     </body>
 </html>
