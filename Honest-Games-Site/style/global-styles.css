@@ -37,6 +37,7 @@
 
 /*Reset all margin and padding*/
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -83,17 +84,17 @@ p {
 /*General Links*/
 a {
     text-decoration: none;
-    color: var(--linkColor);
+    /*color: inherit;*/
 }
 
 /*Notifcation Bar*/
 #notifBar {
     width: 100%;
-    font-size: var(--bodyCopyHeadline);
+    font-size: 2rem;
     background-color: greenyellow;
     text-align: center;
-    padding: 20px;
-    /*position: fixed;*/
+    padding: 10px;
+    /*position: fixed ;*/
 }
 
 /*General Navigation*/
@@ -173,7 +174,8 @@ header li a::after {
     top: -25px;
 }
 
-header li a:hover {
+header li a:hover,
+header li a:focus {
     text-decoration-color: var(--mainBrandColor);
     text-decoration-thickness: 0.5rem;
 }
@@ -194,6 +196,10 @@ footer {
 }
 #footerLogo {
     max-width: 356px;
+    transition: transform 0.5s;
+}
+#footerLogo:hover {
+    transform: scale(1.03);
 }
 
 footer nav ul {
@@ -220,7 +226,8 @@ footer nav a::after {
     top: -25px;
 }
 
-footer nav li a:hover {
+footer nav li a:hover,
+footer nav li a:focus {
     text-decoration: underline;
     text-decoration-thickness: 0.5rem;
 }
@@ -239,6 +246,11 @@ footer nav li a:hover {
 
 #footerSocialMedia img {
     max-width: 71px;
+    transition: transform 0.5s;
+}
+
+#footerSocialMedia img:hover {
+    transform: scale(1.05);
 }
 
 /*Media Query for 1200px and less*/
@@ -260,18 +272,42 @@ footer nav li a:hover {
     }
     header nav {
         display: none;
+        padding: 2em;
+        background-color: rgba(255, 250, 250, 0.8);
     }
     header nav ul {
         flex-direction: column;
         gap: 2rem;
         margin: auto;
     }
-    /*removes image*/
+    /*removes logo image*/
     header nav ul li:nth-child(3) {
         display: none;
     }
+    header nav ul li:nth-child(1) {
+        animation-delay: 100ms;
+    }
+    header nav ul li:nth-child(2) {
+        animation-delay: 150ms;
+    }
+    header nav ul li:nth-child(3) {
+        animation-delay: 200ms;
+    }
+    header nav ul li:nth-child(4) {
+        animation-delay: 250ms;
+    }
+    header nav ul li:nth-child(5) {
+        animation-delay: 300ms;
+    }
+
     footer nav ul {
         flex-direction: column;
         gap: 2rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #mobileBar {
+        margin: 3% 5%;
     }
 }
