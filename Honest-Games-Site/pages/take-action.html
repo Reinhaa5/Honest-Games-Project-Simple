@@ -16,6 +16,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         <link href="../style/global-styles.css" rel="stylesheet" />
+        <link href="../style/take-action-style.css" rel="stylesheet" />
     </head>
     <body>
         <!--Site Header-->
@@ -23,7 +24,7 @@
             <div id="notifBar">Website is still under development. Last update 9/20</div>
             <div id="mobileBar">
                 <a href="../index.html"><img src="../media/Honest-Games-Project-Nav-Logo.png" alt="home" /></a>
-                <button id="hamburgerBtn" onclick="mobileNavDisplay()">
+                <button id="hamburgerBtn" onclick="mobileNavDisplay()" aria-label="Display navigation">
                     <svg viewBox="0 0 100 80" width="40" height="40" fill="#3550ce">
                         <rect width="100" height="20"></rect>
                         <rect y="30" width="100" height="20"></rect>
@@ -33,7 +34,7 @@
             </div>
             <nav id="main-nav" aria-label="Main menu">
                 <ul>
-                                <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html">Home</a></li>
                     <li><a href="take-action.html">Take Action</a></li>
                     <li>
                         <a href="../index.html"><img src="../media/Honest-Games-Project-Nav-Logo.png" alt="home" /></a>
@@ -43,6 +44,84 @@
                 </ul>
             </nav>
         </header>
+        <main>
+            <div id="introModule">
+                <h1><span>Get Informed: </span><br />Protect Yourself from Deceptive Patterns in Video Games</h1>
+                <p>
+                    Modern video games can use sneaky tricks to get you to spend more money. Whether you’re playing a
+                    casual mobile game or the latest mega-hit, understanding these tricks can help you make better
+                    choices.
+                </p>
+            </div>
+            <div id="quickLinkModule">
+                <div id="quickLinkContainer">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="#">Common Deceptive Patterns</a></li>
+                        <li><a href="#">Real Life Harm</a></li>
+                        <li><a href="#">Share your Story</a></li>
+                    </ul>
+                    <img src="https://placehold.co/350x330" />
+                </div>
+            </div>
+
+            <div id="commoneDPModule">
+                <h2 class="upperCase">COMMON DECEPTIVE PATTERNS</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+                </p>
+                <div>
+                    <div>
+                        <h3>Title</h3>
+                        <p>Category</p>
+                        <img src="https://placehold.co/350x330" />
+                    </div>
+                </div>
+            </div>
+
+            <div id="harmModule">
+                <h2 class="upperCase">Real Life Harm</h2>
+                <p>
+                    These two families lost thousands of dollars because their kids impulsively spent money on
+                    microtransactions. Spending limits could have prevented this.
+                </p>
+                <div class="caseStudy">
+                    <img src="https://placehold.co/350x330" />
+                    <div>
+                        <h3>Case Study 1</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                            doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
+                            quasi.
+                        </p>
+                    </div>
+                </div>
+                <div class="caseStudy">
+                    <img src="https://placehold.co/350x330" />
+                    <div>
+                        <h3>Case Study 1</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                            doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
+                            quasi.
+                        </p>
+                    </div>
+                </div>
+                <div id="shareContainer">
+                    <h2>Share your story with us</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+                    </p>
+                    <button>Button</button>
+                </div>
+            </div>
+        </main>
         <!--Footer Module-->
         <footer>
             <a href="../index.html"

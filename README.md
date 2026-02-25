@@ -1,3 +1,3 @@
 # Honest-Games-Project-Simple
 
-Simple HTML&CSS for the website. Using this so I can code it on my tablet.
+Simple HTML&CSS for the website. I put it in a framework later when I feel like it.

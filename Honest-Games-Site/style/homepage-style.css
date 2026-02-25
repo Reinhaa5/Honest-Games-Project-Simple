@@ -274,15 +274,13 @@
 
 /*Media Query for 1200px and less*/
 @media only screen and (max-width: 1200px) {
-    main {
-        /*padding-top: 3rem;*/
-    }
     h2 {
         font-size: 4.5rem;
     }
 
     /*Hero Module*/
     #hero {
+        padding-top: 20vh;
         background-size: 65%;
         min-height: 105vh;
         /*background-position: bottom center;*/
@@ -353,9 +351,7 @@
         padding: 2rem;
         font-size: 7rem;
     }
-    #DeceptivePatternsInfoContainerHeader h2 > span:last-child {
-        /*max-width: 60%;*/
-    }
+
     #DeceptivePatternsInfoContainerHeader h2 {
         font-size: 2rem;
     }
@@ -393,9 +389,11 @@
         font-size: 4rem;
     }
     #hero {
+        padding-top: 40%;
         padding-bottom: 40%;
         background-position: bottom right;
         background-size: contain;
+        min-height: 119vh;
     }
     #heroText {
         padding-left: 0;

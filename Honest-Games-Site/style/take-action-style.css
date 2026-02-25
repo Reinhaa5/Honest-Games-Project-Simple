@@ -1,0 +1,88 @@
+/*CSS for Take Action Page*/
+/*Intro Module*/
+#introModule {
+    max-width: 1200px;
+    text-align: center;
+    margin: 5rem auto;
+}
+#introModule h1 {
+    color: var(--mainBrandColor);
+}
+#introModule h1 span {
+    font-size: 6rem;
+}
+
+#introModule p {
+    max-width: 850px;
+    margin: 25px auto;
+}
+
+#quickLinkModule {
+    align-items: center;
+    position: relative;
+    background: url(/Honest-Games-Site/media/game-background-texture-cropped.svg), var(--mainBrandColor);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 800px;
+    padding: 122px 350px;
+}
+#quickLinkContainer {
+    background-color: var(--secondaryBrandColor);
+    max-width: 830px;
+    padding: 56px 106px;
+    min-height: 500px;
+}
+#quickLinkModule h2 {
+    color: var(--mainBrandColor);
+    margin-bottom: 2rem;
+}
+#quickLinkModule ul {
+    list-style: none;
+}
+#quickLinkModule ul li {
+    max-width: 75%;
+    margin-bottom: 2rem;
+}
+#quickLinkModule ul li a {
+    font-size: 3rem;
+    color: var(--linkColor);
+    font-weight: 700;
+}
+#quickLinkModule ul li a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 0.5rem;
+}
+
+#quickLinkModule img {
+    position: absolute;
+    top: 11%;
+    left: 51%;
+    width: 600px;
+}
+
+#commoneDPModule {
+    padding: 8% 0;
+    max-width: var(--desktopWidth);
+    margin: auto;
+}
+#commoneDPModule h2 {
+    color: var(--mainBrandColor);
+    margin-bottom: 2rem;
+}
+#dpGridContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.dpGridItem {
+    display: flex;
+    flex-direction: column;
+}
+.dpGridItem h3, .dpGridItem p {
+order: 1;
+}
+.dpGridItem img {
+    order: 0;
+}
